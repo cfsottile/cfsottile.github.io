@@ -13,8 +13,8 @@
     <title>Reportar evento - Rescat.AR</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" role="menubar">
+        <a class="navbar-brand" href="index.html" role="menuitem" tabindex="0">
           <img src="imgs/lifesaver.png" width="25" height="25" alt="Ícono de un salvavidas" title="Ícono de un salvavidas">
           Rescat.AR
         </a>
@@ -24,27 +24,27 @@
       
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+            <li class="nav-item" role="menuitem" tabindex="0">
               <a class="nav-link" href="index.html">Inicio</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" role="menuitem" tabindex="0">
               <a class="nav-link" href="us.html">Nosotros</a>
             </li>
           </ul>
-          <div class="nav-item dropdown">
+          <div class="nav-item dropdown" role="menuitem" tabindex="0">
             <a class="nav-link dropdown-toggle text-dark" href="#" id="events" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <img src="imgs/little_person.png" width="25" height="25" alt="Ícono de usuario" title="Ícono de usuario">
               Usuario
             </a>
             <div class="dropdown-menu" aria-labelledby="events">
-              <a class="dropdown-item" href="#">Perfil</a>
+              <a class="dropdown-item" role="menuitem" tabindex="0" href="#">Perfil</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="current_event_as_victim.html">Evento actual</a>
-              <a class="dropdown-item" href="#">Mis eventos</a>
-              <a class="dropdown-item" href="search_event_as_victim.html">Buscar eventos</a>
-              <a class="dropdown-item active" href="report_event.html">Reportar evento</a>
+              <a class="dropdown-item" role="menuitem" tabindex="0" href="current_event_as_victim.html">Evento actual</a>
+              <a class="dropdown-item" role="menuitem" tabindex="0" href="#">Mis eventos</a>
+              <a class="dropdown-item" role="menuitem" tabindex="0" href="search_event_as_victim.html">Buscar eventos</a>
+              <a class="dropdown-item active" role="menuitem" tabindex="0" href="report_event.html">Reportar evento</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Salir</a>
+              <a class="dropdown-item" role="menuitem" tabindex="0" href="#">Salir</a>
             </div>
           </div>
         </div>
@@ -60,19 +60,19 @@
           <div class="row">
             <div class="form-group col-md-9">
               <label for="name">Nombre<span class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="" required>
+              <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="" aria-required="true" required>
               <small id="nameHelp" class="form-text text-muted">Nombre descriptivo para el evento.</small>
             </div>
             <div class="form-group col-md-3">
               <label for="date">Fecha<span class="text-danger">*</span></label>
-              <input type="date" class="form-control" id="date" aria-describedby="dateHelp" placeholder="" required>
+              <input type="date" class="form-control" id="date" aria-describedby="dateHelp" placeholder="" aria-required="true" required>
               <small id="dateHelp" class="form-text text-muted">Fecha de ocurrencia o inicio del evento.</small>
             </div>
           </div>
           <div class="row">
             <div class="form-group col-md-6">
               <label for="city">Ciudad<span class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="city" placeholder="" required>
+              <input type="text" class="form-control" id="city" placeholder="" aria-required="true" required>
               <small id="cityHelp" class="form-text text-muted">Ciudad en donde se desarrolló principalmente el evento.</small>
             </div>
             <div class="form-group col-md-6">
@@ -109,7 +109,7 @@
           <div class="row">
             <div class="form-group col-md-10"></div>
             <div class="form-group col-md-2">
-              <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+              <button type="submit" class="btn btn-primary btn-block" tabindex="0">Enviar</button>
             </div>
           </div>
         </form>
@@ -117,7 +117,7 @@
 
       <footer class="footer">
         <div class="container">
-          <span class="text-muted"><a class="text-dark" href="#">Usuario</a> > <a class="text-dark" href="report_event.html">Reportar evento</a></span>
+          <span class="text-muted"><a class="text-dark" href="#" tabindex="0">Usuario</a> > <a class="text-dark" href="report_event.html" tabindex="0">Reportar evento</a></span>
         </div>
       </footer>
 </div>
