@@ -461,6 +461,20 @@ pre[class*="language-"] {
 .token.entity {
 	cursor: help;
 }
+
+.circular--square {
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 50%;*/
+}
 </style>
 
 
@@ -468,9 +482,9 @@ pre[class*="language-"] {
 
 <body>
 
-<!-- <img src="./img/avatar.JPG" width="200"> -->
+<img class="circular--square center" src="./img/avatar.JPG" width="200">
 
-<h1>Cristian Fabián Sottile</h1>
+<h1 style="text-align:center">Cristian Fabián Sottile</h1>
 
 <h2>Posición actual</h2>
 
