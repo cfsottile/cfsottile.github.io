@@ -181,36 +181,39 @@ li {
 }
 
 .erratum {
-    margin-top: 0.25rem;
-    font-size: 0.85rem;
-    color: #666;
+    display: inline;
 }
 
 .erratum summary {
     cursor: pointer;
-    color: #d9534f;
-    /* A subtle red/orange for attention but not shouting */
-    font-weight: 500;
+    color: var(--link-color);
+    font-weight: normal;
     list-style: none;
-    /* Hide default triangle in some browsers */
+    display: inline;
 }
 
 .erratum summary::-webkit-details-marker {
     display: none;
-    /* Hide default triangle in Chrome/Safari */
 }
 
 .erratum summary:hover {
     text-decoration: underline;
+    color: var(--link-hover-color);
+}
+
+.erratum[open] summary {
+    font-weight: bold;
 }
 
 .erratum-content {
-    margin-top: 0.25rem;
+    display: block;
+    margin-top: 0.5rem;
     padding: 0.5rem;
     background-color: #fff9e6;
     border-left: 2px solid #ffc107;
     color: #665c26;
     border-radius: 2px;
+    font-size: 0.9rem;
 }
 
 /* Footer */
