@@ -155,6 +155,23 @@ li {
     margin-bottom: 0.25rem;
 }
 
+#teaching .publication-title {
+    display: inline;
+    margin-bottom: 0;
+}
+
+#teaching .publication-links {
+    display: inline;
+}
+
+#teaching .publication-item {
+    margin-bottom: 0.6rem;
+}
+
+#teaching .teaching-years {
+    margin-left: 0.25rem;
+}
+
 .publication-links {
     font-size: 0.9rem;
     margin-left: 0.5rem;
